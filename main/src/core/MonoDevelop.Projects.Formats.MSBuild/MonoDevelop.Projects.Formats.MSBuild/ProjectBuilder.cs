@@ -160,7 +160,7 @@ namespace MonoDevelop.Projects.Formats.MSBuild
 					p = null;
 				}
 
-				Environment.CurrentDirectory = Path.GetDirectoryName (file);
+				Environment.CurrentDirectory = Path.GetDirectoryName (pc.ProjectFile);
 
 				if (p == null) {
 					p = new Project (buildEngine.Engine);
